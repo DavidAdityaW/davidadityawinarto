@@ -8,30 +8,27 @@
     android:layout_marginBottom="50dp"
     android:gravity="center"
     android:padding="20dp">
-
     <ImageView
         android:id="@+id/iv_walkthrough"
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:layout_margin="15dp"
         android:adjustViewBounds="true" />
-
     <TextView
         android:id="@+id/tv_titlewalkthrough"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/blackColor"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:fontFamily="@font/nunito_bold" />
-
     <TextView
         android:id="@+id/tv_subtitlewalkthrough"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:textColor="@color/greyColor"
         android:textSize="18sp"
         android:fontFamily="@font/rubik_regular" />
-
 </LinearLayout>

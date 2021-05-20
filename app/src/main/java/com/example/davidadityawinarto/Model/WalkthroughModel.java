@@ -29,5 +29,4 @@ public class WalkthroughModel {
     public void setSubtitle(String subtitle) {
         this.subtitle = subtitle;
     }
-
 }

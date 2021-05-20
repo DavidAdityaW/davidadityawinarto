@@ -58,6 +58,160 @@
         android:layout_weight="3"
         android:background="@drawable/card_background"
         android:elevation="36dp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/title_aboutme"
+                    android:textColor="@color/blackColor"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/aboutme"
+                    android:textColor="@color/greyColor"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/nunito_bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/title_contactme"
+                    android:textColor="@color/blackColor"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/greyColor" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_facebook"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/contact_facebook" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_instagram"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/contact_instagram" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_twitter"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/contact_twitter" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--sosmed baris 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_whatsapp"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/contact_whatsapp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_gmail"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/contact_gmail" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_map"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/contact_map" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/greyColor" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/phone"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="14sp"
+                    android:drawableLeft="@drawable/contact_baseline_local_phone_24"
+                    android:background="@drawable/bg_blue1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/about"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="14sp"
+                    android:drawableLeft="@drawable/contact_baseline_error_24"
+                    android:background="@drawable/bg_blue2" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
     </RelativeLayout>
 
 </LinearLayout>

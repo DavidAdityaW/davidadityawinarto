@@ -61,5 +61,4 @@ public class WalkthroughAdapter extends RecyclerView.Adapter<WalkthroughAdapter.
             ivWalkthrough.setImageResource(walkthroughModel.getImage());
         }
     }
-
 }

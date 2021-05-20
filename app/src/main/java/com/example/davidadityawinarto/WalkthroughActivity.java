@@ -66,18 +66,18 @@ public class WalkthroughActivity extends AppCompatActivity {
         List<WalkthroughModel> walkthroughModels = new ArrayList<>();
 
         WalkthroughModel itemWalkthrough1 = new WalkthroughModel();
-        itemWalkthrough1.setTitle("My Profile");
-        itemWalkthrough1.setSubtitle("You can see my profile in here");
+        itemWalkthrough1.setTitle("Hallo!");
+        itemWalkthrough1.setSubtitle("Welcome to David Aditya Winarto apps");
         itemWalkthrough1.setImage(R.drawable.walkthrough1);
 
         WalkthroughModel itemWalkthrough2 = new WalkthroughModel();
-        itemWalkthrough2.setTitle("My Contact");
-        itemWalkthrough2.setSubtitle("You can see my contact in here blablablablabala blablablablabala blablablablabala");
+        itemWalkthrough2.setTitle("My Profile, Daily Act, Gallery, Music & Video");
+        itemWalkthrough2.setSubtitle("You can see my profile, daily activity, gallery, music & video in here");
         itemWalkthrough2.setImage(R.drawable.walkthrough2);
 
         WalkthroughModel itemWalkthrough3 = new WalkthroughModel();
-        itemWalkthrough3.setTitle("My Daily, Photo, Music & Video");
-        itemWalkthrough3.setSubtitle("You can see my favorite in here");
+        itemWalkthrough3.setTitle("Contact Me");
+        itemWalkthrough3.setSubtitle("Also you can see and get my contact or social media in here");
         itemWalkthrough3.setImage(R.drawable.walkthrough3);
 
         walkthroughModels.add(itemWalkthrough1);
@@ -123,5 +123,4 @@ public class WalkthroughActivity extends AppCompatActivity {
         }else
             btnActionWalkthrough.setText("Next");
     }
-
 }

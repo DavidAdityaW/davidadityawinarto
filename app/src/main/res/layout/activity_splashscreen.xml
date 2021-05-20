@@ -10,14 +10,14 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="250dp"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_logo"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/david"
+            android:src="@drawable/logo"
             android:layout_gravity="center"
             app:civ_border_width="2dp"
             app:civ_border_color="@color/whiteColor" />
@@ -28,19 +28,9 @@
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:text="DAVID ADITYA WINARTO"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:fontFamily="@font/nunito_bold"
             android:textColor="@color/whiteColor" />
-        <TextView
-            android:id="@+id/tv_appversion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center"
-            android:text="V 1.0"
-            android:textSize="14sp"
-            android:fontFamily="@font/rubik_regular"
-            android:textColor="@color/greyColor" />
     </LinearLayout>
 
 </RelativeLayout>
