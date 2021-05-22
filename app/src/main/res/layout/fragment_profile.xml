@@ -190,6 +190,7 @@
                     android:layout_marginBottom="15dp"
                     android:background="@color/greyColor" />
                 <TextView
+                    android:id="@+id/tv_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -200,6 +201,7 @@
                     android:drawableLeft="@drawable/contact_baseline_local_phone_24"
                     android:background="@drawable/bg_blue1" />
                 <TextView
+                    android:id="@+id/tv_about"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
