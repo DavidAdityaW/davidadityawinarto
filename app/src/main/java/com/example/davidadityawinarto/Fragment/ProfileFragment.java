@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.text.Spannable;
 import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.davidadityawinarto.AboutDialog;
 import com.example.davidadityawinarto.R;
 
 /**
@@ -88,7 +88,7 @@ public class ProfileFragment extends Fragment {
                 Intent fb = new Intent();
                 fb.setAction(Intent.ACTION_VIEW);
                 fb.addCategory(Intent.CATEGORY_BROWSABLE);
-                fb.setData(Uri.parse("https://www.facebook.com"));
+                fb.setData(Uri.parse("https://web.facebook.com/davidadityaw"));
                 startActivity(fb);
             }
         });
@@ -100,7 +100,7 @@ public class ProfileFragment extends Fragment {
                 Intent ig = new Intent();
                 ig.setAction(Intent.ACTION_VIEW);
                 ig.addCategory(Intent.CATEGORY_BROWSABLE);
-                ig.setData(Uri.parse("https://www.facebook.com"));
+                ig.setData(Uri.parse("https://www.instagram.com/davidaditya_w"));
                 startActivity(ig);
             }
         });
@@ -112,7 +112,7 @@ public class ProfileFragment extends Fragment {
                 Intent tw = new Intent();
                 tw.setAction(Intent.ACTION_VIEW);
                 tw.addCategory(Intent.CATEGORY_BROWSABLE);
-                tw.setData(Uri.parse("https://www.facebook.com"));
+                tw.setData(Uri.parse("https://twitter.com/davidaditya_w"));
                 startActivity(tw);
             }
         });
@@ -124,7 +124,7 @@ public class ProfileFragment extends Fragment {
                 Intent wa = new Intent();
                 wa.setAction(Intent.ACTION_VIEW);
                 wa.addCategory(Intent.CATEGORY_BROWSABLE);
-                wa.setData(Uri.parse("https://www.facebook.com"));
+                wa.setData(Uri.parse("https://api.whatsapp.com/send?phone=6283121153350"));
                 startActivity(wa);
             }
         });
@@ -136,7 +136,7 @@ public class ProfileFragment extends Fragment {
                 Intent gm = new Intent();
                 gm.setAction(Intent.ACTION_VIEW);
                 gm.addCategory(Intent.CATEGORY_BROWSABLE);
-                gm.setData(Uri.parse("https://www.facebook.com"));
+                gm.setData(Uri.parse("mailto:davidadityawinarto@gmail.com"));
                 startActivity(gm);
             }
         });
@@ -148,14 +148,23 @@ public class ProfileFragment extends Fragment {
                 Intent map = new Intent();
                 map.setAction(Intent.ACTION_VIEW);
                 map.addCategory(Intent.CATEGORY_BROWSABLE);
-                map.setData(Uri.parse("https://www.facebook.com"));
+                map.setData(Uri.parse("https://goo.gl/maps/Bqme47ogyzgimCoC6"));
                 startActivity(map);
             }
         });
 
         // phone
-        tvPhone.setText("083121153350");
+        tvPhone.setText(" 083121153350");
         Linkify.addLinks(tvPhone, Linkify.PHONE_NUMBERS);
+
+        // about
+        tvAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AboutDialog aboutDialog = new AboutDialog();
+                aboutDialog.show(getFragmentManager(),"AboutDialogFragment");
+            }
+        });
 
         return root;
     }

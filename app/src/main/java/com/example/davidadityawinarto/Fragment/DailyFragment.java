@@ -3,12 +3,20 @@ package com.example.davidadityawinarto.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.davidadityawinarto.Adapter.DailyAdapter;
+import com.example.davidadityawinarto.Adapter.FriendlistAdapter;
+import com.example.davidadityawinarto.Model.DailyModel;
+import com.example.davidadityawinarto.Model.FriendlistModel;
 import com.example.davidadityawinarto.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,10 +65,61 @@ public class DailyFragment extends Fragment {
         }
     }
 
+    // views dailyact
+    RecyclerView recyclerViewDaily;
+    ArrayList<DailyModel> dailyModel;
+    // views friendlist
+    RecyclerView recyclerViewFriendlist;
+    ArrayList<FriendlistModel> friendlistModel;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_daily, container, false);
+        View root = inflater.inflate(R.layout.fragment_daily, container, false);
+
+        // daliyact
+        recyclerViewDaily = root.findViewById(R.id.recview_daily);
+        recyclerViewDaily.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        dailyModel = new ArrayList<>();
+
+        DailyModel daily1 = new DailyModel(R.drawable.daily_banguntidur, "Bangun Pagi", "bangun tidur maks jam 06.00");
+        dailyModel.add(daily1);
+        DailyModel daily2 = new DailyModel(R.drawable.daily_makan, "Sarapan", "makan sayuran sehat");
+        dailyModel.add(daily2);
+        DailyModel daily3 = new DailyModel(R.drawable.daily_olahraga, "Olahraga", "olahraga pagi bentar aja");
+        dailyModel.add(daily3);
+        DailyModel daily4 = new DailyModel(R.drawable.daily_kuliahonline, "Kuliah Online", "megikuti pembelajaran online");
+        dailyModel.add(daily4);
+        DailyModel daily5 = new DailyModel(R.drawable.daily_risetrobotik, "Riset", "belajar dan riset");
+        dailyModel.add(daily5);
+        DailyModel daily6 = new DailyModel(R.drawable.daily_santuy, "Istirahat", "dengar lagu atau nonton santai");
+        dailyModel.add(daily6);
+
+        recyclerViewDaily.setAdapter(new DailyAdapter(dailyModel));
+
+        // friendlist
+        recyclerViewFriendlist = root.findViewById(R.id.recview_friendlist);
+        recyclerViewFriendlist.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+
+        friendlistModel = new ArrayList<>();
+
+        FriendlistModel friendlist1 = new FriendlistModel(R.drawable.friend1, "Aisyah");
+        friendlistModel.add(friendlist1);
+        FriendlistModel friendlist2 = new FriendlistModel(R.drawable.friend2, "Bunga");
+        friendlistModel.add(friendlist2);
+        FriendlistModel friendlist3 = new FriendlistModel(R.drawable.friend3, "Ahsan");
+        friendlistModel.add(friendlist3);
+        FriendlistModel friendlist4 = new FriendlistModel(R.drawable.friend4, "Turangga");
+        friendlistModel.add(friendlist4);
+        FriendlistModel friendlist5 = new FriendlistModel(R.drawable.friend5, "Azizah");
+        friendlistModel.add(friendlist5);
+        FriendlistModel friendlist6 = new FriendlistModel(R.drawable.friend6, "Dinda");
+        friendlistModel.add(friendlist6);
+
+        recyclerViewFriendlist.setAdapter(new FriendlistAdapter(friendlistModel));
+
+        return root;
     }
 }
