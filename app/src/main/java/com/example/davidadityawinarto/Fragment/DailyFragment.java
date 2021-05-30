@@ -96,6 +96,18 @@ public class DailyFragment extends Fragment {
         dailyModel.add(daily5);
         DailyModel daily6 = new DailyModel(R.drawable.daily_santuy, "Istirahat", "dengar lagu atau nonton santai");
         dailyModel.add(daily6);
+        DailyModel daily7 = new DailyModel(R.drawable.daily_banguntidur, "Bangun Pagi", "bangun tidur maks jam 06.00");
+        dailyModel.add(daily7);
+        DailyModel daily8 = new DailyModel(R.drawable.daily_makan, "Sarapan", "makan sayuran sehat");
+        dailyModel.add(daily8);
+        DailyModel daily9 = new DailyModel(R.drawable.daily_olahraga, "Olahraga", "olahraga pagi bentar aja");
+        dailyModel.add(daily9);
+        DailyModel daily10 = new DailyModel(R.drawable.daily_kuliahonline, "Kuliah Online", "megikuti pembelajaran online");
+        dailyModel.add(daily10);
+        DailyModel daily11 = new DailyModel(R.drawable.daily_risetrobotik, "Riset", "belajar dan riset");
+        dailyModel.add(daily11);
+        DailyModel daily12 = new DailyModel(R.drawable.daily_santuy, "Istirahat", "dengar lagu atau nonton santai");
+        dailyModel.add(daily12);
 
         recyclerViewDaily.setAdapter(new DailyAdapter(dailyModel));
 
