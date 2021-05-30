@@ -100,7 +100,7 @@ public class ProfileFragment extends Fragment {
                 Intent ig = new Intent();
                 ig.setAction(Intent.ACTION_VIEW);
                 ig.addCategory(Intent.CATEGORY_BROWSABLE);
-                ig.setData(Uri.parse("https://www.instagram.com/davidaditya_w"));
+                ig.setData(Uri.parse("https://www.instagram.com/davidadityaw_"));
                 startActivity(ig);
             }
         });

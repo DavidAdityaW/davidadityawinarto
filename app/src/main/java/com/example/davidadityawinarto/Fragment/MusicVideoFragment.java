@@ -1,14 +1,25 @@
 package com.example.davidadityawinarto.Fragment;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
+import com.example.davidadityawinarto.Adapter.DailyAdapter;
+import com.example.davidadityawinarto.Adapter.MusicAdapter;
+import com.example.davidadityawinarto.Model.DailyModel;
+import com.example.davidadityawinarto.Model.MusicModel;
 import com.example.davidadityawinarto.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,10 +68,55 @@ public class MusicVideoFragment extends Fragment {
         }
     }
 
+    // views music
+    RecyclerView recyclerViewMusic;
+    ArrayList<MusicModel> musicModel;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_music_video, container, false);
+        View root = inflater.inflate(R.layout.fragment_music_video, container, false);
+
+        // music
+        recyclerViewMusic = root.findViewById(R.id.recview_music);
+        recyclerViewMusic.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        musicModel = new ArrayList<>();
+
+        MusicModel music1 = new MusicModel(R.drawable.musicplay, "To The Bone", "Pamungkas");
+        musicModel.add(music1);
+        MusicModel music2 = new MusicModel(R.drawable.musicplay, "This City", "Sam Fischer");
+        musicModel.add(music2);
+        MusicModel music3 = new MusicModel(R.drawable.musicplay, "Without Me", "Halsey");
+        musicModel.add(music3);
+        MusicModel music4 = new MusicModel(R.drawable.musicplay, "Let Me Down Slowly", "Alec Benjamin");
+        musicModel.add(music4);
+        MusicModel music5 = new MusicModel(R.drawable.musicplay, "Since U Been Gone", "Thomas Daniel");
+        musicModel.add(music5);
+        MusicModel music6 = new MusicModel(R.drawable.musicplay, "To The Bone", "Pamungkas");
+        musicModel.add(music6);
+        MusicModel music7 = new MusicModel(R.drawable.musicplay, "This City", "Sam Fischer");
+        musicModel.add(music7);
+        MusicModel music8 = new MusicModel(R.drawable.musicplay, "Without Me", "Halsey");
+        musicModel.add(music8);
+        MusicModel music9 = new MusicModel(R.drawable.musicplay, "Let Me Down Slowly", "Alec Benjamin");
+        musicModel.add(music9);
+        MusicModel music10 = new MusicModel(R.drawable.musicplay, "Since U Been Gone", "Thomas Daniel");
+        musicModel.add(music10);
+
+        recyclerViewMusic.setAdapter(new MusicAdapter(musicModel));
+
+        // video
+        VideoView vvVideo = root.findViewById(R.id.vv_video);
+        String videoPath = "android.resource://" + getContext().getPackageName() + "/" + R.raw.video1;
+        Uri uri = Uri.parse(videoPath);
+        vvVideo.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(getContext());
+        vvVideo.setMediaController(mediaController);
+        mediaController.setAnchorView(vvVideo);
+
+        return root;
     }
 }
