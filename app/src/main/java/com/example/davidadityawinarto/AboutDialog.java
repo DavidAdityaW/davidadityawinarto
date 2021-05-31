@@ -11,6 +11,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
+/*
+    Dikerjakan pada tanggal : 22 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 public class AboutDialog extends DialogFragment {
     @Nullable
     @Override

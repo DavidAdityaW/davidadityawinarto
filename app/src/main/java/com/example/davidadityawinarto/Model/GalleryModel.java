@@ -1,5 +1,13 @@
 package com.example.davidadityawinarto.Model;
 
+/*
+    Dikerjakan pada tanggal : 30 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 public class GalleryModel {
 
     int image;

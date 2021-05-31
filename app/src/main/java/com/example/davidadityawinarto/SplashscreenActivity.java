@@ -6,6 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+/*
+    Dikerjakan pada tanggal : 19 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 public class SplashscreenActivity extends AppCompatActivity {
 
     @Override

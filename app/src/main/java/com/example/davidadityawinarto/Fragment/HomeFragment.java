@@ -10,6 +10,14 @@ import android.view.ViewGroup;
 
 import com.example.davidadityawinarto.R;
 
+/*
+    Dikerjakan pada tanggal : 20 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to

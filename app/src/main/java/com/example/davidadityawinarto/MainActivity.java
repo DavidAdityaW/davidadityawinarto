@@ -12,6 +12,14 @@ import com.example.davidadityawinarto.Fragment.HomeFragment;
 import com.example.davidadityawinarto.Fragment.MusicVideoFragment;
 import com.example.davidadityawinarto.Fragment.ProfileFragment;
 
+/*
+    Dikerjakan pada tanggal : 15 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 public class MainActivity extends AppCompatActivity {
 
     MeowBottomNavigation bottomNavigation;

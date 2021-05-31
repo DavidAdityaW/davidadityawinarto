@@ -15,6 +15,14 @@ import com.example.davidadityawinarto.R;
 
 import java.util.ArrayList;
 
+/*
+    Dikerjakan pada tanggal : 30 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.myviewholder> {
 
     ArrayList<MusicModel> musicModel;

@@ -14,6 +14,14 @@ import com.example.davidadityawinarto.R;
 
 import java.util.List;
 
+/*
+    Dikerjakan pada tanggal : 19 Mei 2021
+    Dibuat oleh :
+    NIM   : 10118071
+    Nama  : David Aditya Winarto
+    Kelas : IF-2
+*/
+
 public class WalkthroughAdapter extends RecyclerView.Adapter<WalkthroughAdapter.WalkthroughViewHolder> {
 
     private List<WalkthroughModel> walkthroughModels;
